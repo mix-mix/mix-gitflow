@@ -6,6 +6,28 @@
 	<artifactId>mix-gitflow</artifactId>
 	<packaging>pom</packaging>
 	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+        <start-class>com.enniu.cloud.service.integration.IntegrationTestTool</start-class>
+    </properties>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>external.atlassian.jgitflow</groupId>
+                    <artifactId>jgitflow-maven-plugin</artifactId>
+                    <version>1.0-m5.1</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>external.atlassian.jgitflow</groupId>
+                <artifactId>jgitflow-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 	
 	<modules>
 		<module>a</module>
